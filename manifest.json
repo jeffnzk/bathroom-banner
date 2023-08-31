@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Focus",
+    "version": "1.0",
+    "description": "Chrome Extension to help you focus!",
+    "content_scripts": [
+        {
+            "matches": ["https://www.youtube.com/*"],
+            "js": ["jquery.min.js", "./main.js"]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": ["tiger.jpg"],
+            "matches": ["https://www.youtube.com/*"]
+        }
+    ],
+    "css": ["index.css"]
+}
